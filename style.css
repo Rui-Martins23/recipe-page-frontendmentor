@@ -1,0 +1,142 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --color-bg: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --text-color: hsl(30, 10%, 34%);
+    --main-title: hsl(24, 5%, 18%);
+    --section-title: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --preparation-bg: hsl(330, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--color-bg);
+    padding: 0 2rem;
+}
+
+.recipe-page {
+    background-color: var(--white);
+    max-width: 46rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 2.5rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: var(--main-title);
+    margin-bottom: 1rem;
+}
+
+.recipe-name p {
+    line-height: 1.25rem;
+    color: var(--text-color);
+}
+
+.preparation {
+    background-color: var(--preparation-bg);
+    border-radius: 8px;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    color: var(--rose-800);
+    line-height: 2.25rem;
+}
+
+.preparation li {
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--section-title);
+    margin-bottom: 1rem;
+}
+
+.ingredients li {
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--text-color);
+    line-height: 2rem;
+}
+
+.ingredients li::marker {
+    color: var(--section-title);
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.instructions li {
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--text-color);
+    line-height: 2rem;
+}
+
+.instructions li::marker {
+    color: var(--section-title);
+    font-weight: bold;
+}
+
+.nutrition p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.nutrition li {
+    display: inline-block;
+    width: 50%;;
+    list-style: none;
+    color: var(--text-color);
+    margin-left: 2rem;
+}
+
+.nutrition span {
+    color: var(--section-title);
+    font-weight: bold;
+}
+
+.nutrition hr {
+    margin: 1rem 0;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
